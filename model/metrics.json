@@ -1,0 +1,157 @@
+{
+  "selected_model": "Logistic Regression",
+  "selection_rule": "highest mean 5-fold CV macro F1 on the training set",
+  "sklearn_version": "1.7.2",
+  "clean_info": {
+    "rows_raw": 23486,
+    "missing_review_text": 845,
+    "duplicate_texts": 5,
+    "rows_clean": 22636,
+    "class_counts": {
+      "Negative": 2370,
+      "Neutral": 2823,
+      "Positive": 17443
+    }
+  },
+  "train_size": 18108,
+  "test_size": 4528,
+  "results": [
+    {
+      "model": "Naive Bayes",
+      "cv_f1_macro_mean": 0.6203,
+      "cv_f1_macro_std": 0.0121,
+      "accuracy": 0.8456,
+      "precision_macro": 0.6702,
+      "recall_macro": 0.6188,
+      "f1_macro": 0.6382,
+      "negative_recall": 0.5675
+    },
+    {
+      "model": "Logistic Regression",
+      "cv_f1_macro_mean": 0.6571,
+      "cv_f1_macro_std": 0.0096,
+      "accuracy": 0.8291,
+      "precision_macro": 0.6439,
+      "recall_macro": 0.6607,
+      "f1_macro": 0.6516,
+      "negative_recall": 0.597
+    },
+    {
+      "model": "Linear SVM",
+      "cv_f1_macro_mean": 0.6248,
+      "cv_f1_macro_std": 0.0065,
+      "accuracy": 0.8447,
+      "precision_macro": 0.6784,
+      "recall_macro": 0.6144,
+      "f1_macro": 0.6365,
+      "negative_recall": 0.5844
+    }
+  ],
+  "confusion_matrices": {
+    "Naive Bayes": [
+      [
+        269,
+        114,
+        91
+      ],
+      [
+        135,
+        181,
+        249
+      ],
+      [
+        33,
+        77,
+        3379
+      ]
+    ],
+    "Logistic Regression": [
+      [
+        283,
+        156,
+        35
+      ],
+      [
+        148,
+        263,
+        154
+      ],
+      [
+        60,
+        221,
+        3208
+      ]
+    ],
+    "Linear SVM": [
+      [
+        277,
+        89,
+        108
+      ],
+      [
+        128,
+        163,
+        274
+      ],
+      [
+        26,
+        78,
+        3385
+      ]
+    ]
+  },
+  "label_rule": "1-2 stars = Negative, 3 = Neutral, 4-5 = Positive",
+  "drivers": {
+    "Negative": [
+      "disappointed",
+      "not",
+      "poor",
+      "horrible",
+      "unflattering",
+      "awful",
+      "cheap",
+      "huge",
+      "disappointing",
+      "terrible",
+      "even",
+      "looked",
+      "was",
+      "not recommend",
+      "back"
+    ],
+    "Neutral": [
+      "however",
+      "to love",
+      "not for",
+      "however the",
+      "ok",
+      "just ok",
+      "returning it",
+      "meh",
+      "is cute",
+      "color and",
+      "but",
+      "much",
+      "if",
+      "pretty but",
+      "arms"
+    ],
+    "Positive": [
+      "love",
+      "great",
+      "perfect",
+      "comfortable",
+      "little",
+      "not too",
+      "love this",
+      "beautiful",
+      "comfy",
+      "unique",
+      "perfectly",
+      "soft",
+      "amazing",
+      "lovely",
+      "compliments"
+    ]
+  }
+}

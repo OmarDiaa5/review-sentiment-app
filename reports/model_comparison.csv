@@ -1,0 +1,4 @@
+model,cv_f1_macro_mean,cv_f1_macro_std,accuracy,precision_macro,recall_macro,f1_macro,negative_recall
+Naive Bayes,0.6203,0.0121,0.8456,0.6702,0.6188,0.6382,0.5675
+Logistic Regression,0.6571,0.0096,0.8291,0.6439,0.6607,0.6516,0.597
+Linear SVM,0.6248,0.0065,0.8447,0.6784,0.6144,0.6365,0.5844
